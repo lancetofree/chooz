@@ -5700,15 +5700,23 @@ td.visible-print {
 a:hover {
   text-decoration: none; }
 
+.container{
+    display: block;
+    max-width: 100% !important;
+}
+
 @media only screen and (min-width: 1200px) {
   .container {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0;
+  
+  } }
 body {
   min-width: 320px;
   height: 100%;
   line-height: 18px;
   font-size: 13px;
+  background: #fff !important;
   color: #777; }
   body.content_only {
     background: none;
@@ -5719,15 +5727,23 @@ textarea {
   resize: none; }
 
 #header {
-  z-index: 5003; }
+  z-index: 5003;
+  position: fixed;
+  width: 100%;
+}
 
 .columns-container {
-  background: #fff; }
+  background: #fff;
+  width: 85%;
+    margin: auto;
+    padding-top: 70px;
+}
 
 #columns {
   position: relative;
   padding-bottom: 50px;
-  padding-top: 15px; }
+  /*padding-top: 15px;*/ 
+}
 
 #index .tab-content {
   margin-top: 35px;
@@ -5737,7 +5753,9 @@ header {
   z-index: 1;
   position: relative;
   background: #fff;
-  padding-bottom: 15px; }
+  border-bottom: 3px solid #22A7F0 !important;
+  /*padding-bottom: 15px;*/ 
+}
 .hide{
     display:none;
 }
