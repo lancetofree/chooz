@@ -8581,6 +8581,16 @@ div.star.star_hover:after {
 
 /*********** OVERIDE *************/
 
+@media (min-width: 1200px){
+	.container{
+		max-width: 1024px;
+	}
+}
+
+.columns-container{
+	background: #fff !important;
+}
+
 .header-container,
 #header{
 	background: #fff !important;
