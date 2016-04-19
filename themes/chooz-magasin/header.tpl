@@ -70,7 +70,7 @@
 		{/if}
 		<div id="page">
 			<div class="header-container">
-				<header id="header">
+				<header id="header" class="chooz_header">
 					{capture name='displayBanner'}{hook h='displayBanner'}{/capture}
 					{if $smarty.capture.displayBanner}
 						<div class="banner">
