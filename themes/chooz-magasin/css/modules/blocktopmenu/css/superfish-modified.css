@@ -13,12 +13,15 @@
 .sf-menu {
   position: relative;
   padding: 0;
-  width: 85%;
+  /* width: 85%; */
+  width: 1024px;
   border-bottom: 3px solid #fff !important;
   background: #fff !important; 
   display: block;
 margin: auto;
 }
+
+
   @media (max-width: 767px) {
     .sf-menu {
       display: none; } }
@@ -65,13 +68,7 @@ margin: auto;
           font-size: 26px; }
         .sf-menu > li span.active:after {
           content: "\f068"; } }
-  .sf-menu > li > a {
-    font: 600 18px/22px "Open Sans", sans-serif;
-    text-transform: uppercase;
-    color: #020202 !important;
-    display: block;
-    padding: 17px 20px;
-    border-bottom: 4px solid #fff !important; }
+  
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover, .sf-menu > li.sfHoverForce > a {
     background: #fff !important;
@@ -247,3 +244,15 @@ ul.sf-menu li li li.sfHover ul {
   padding-right: 0; }
 
 /*# sourceMappingURL=superfish-modified.css.map */
+
+
+/************************************* MODIFS TIX *******************************************/
+
+.sf-menu > li > a {
+    font: 400 14px/22px "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #020202 !important;
+    display: block;
+    padding: 17px 20px;
+    border-bottom: 4px solid #fff !important; 
+}
