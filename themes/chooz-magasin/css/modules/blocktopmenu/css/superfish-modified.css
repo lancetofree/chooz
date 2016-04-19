@@ -40,10 +40,7 @@ margin: auto;
 .sf-menu li:hover {
   visibility: inherit;
   /* fixes IE7 'sticky bug' */ }
-.sf-menu > li .logo{
-    width:180px;
-    height: 60px;
-}
+
 
 .sf-menu > li {
   height: 60px;
@@ -255,4 +252,15 @@ ul.sf-menu li li li.sfHover ul {
     display: block;
     padding: 17px 20px;
     border-bottom: 4px solid #fff !important; 
+}
+.sf-menu > li .logo{
+   /*  width:180px;
+    height: 60px; */
+	width: 100%;
+}
+ul.sf-menu #header_logo a{
+	display: block;
+	width: 200px;
+	height: 60px;
+	background: #d9d9d9;
 }
