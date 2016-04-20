@@ -37,10 +37,10 @@ margin: auto;
 .sf-menu li:hover {
   visibility: inherit;
   /* fixes IE7 'sticky bug' */ }
-.sf-menu > li .logo{
+/*.sf-menu > li .logo{
     width:180px;
     height: 60px;
-}
+}*/
 
 .sf-menu > li {
   height: 60px;

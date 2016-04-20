@@ -5778,8 +5778,8 @@ header {
     position: relative; }
     header .row > .container {
       position: relative; }
-    header .row #header_logo {
-      padding: 0px }
+/*    header .row #header_logo {
+      padding: 0px }*/
       @media (max-width: 992px) {
         header .row #header_logo {
           padding-top: 40px; } }
@@ -8621,14 +8621,13 @@ div.star.star_hover:after {
 	position: static;
     top: 0;
     right: 0;
-    margin: 0;
+    margin: auto;
     border: none;
 }
 #header.chooz_header .sf-menu>li{	
 	height: 75px;
 	border-bottom: none;
 	border-right: none;
-	margin: 0px;
 }
 #header.chooz_header .sf-menu>li:hover a{
 	border-bottom: 3px solid #22a7f0 !important;
@@ -8643,5 +8642,5 @@ div.star.star_hover:after {
 	display: inline-block;
     height: 75px;
     width: 200px;
-	background: #d9d9d9;
+	/*background: #d9d9d9;*/
 }
