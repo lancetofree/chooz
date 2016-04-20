@@ -33,7 +33,7 @@ $(document).ready(function(){
 	if (typeof(homeslider_loop) == 'undefined')
 		homeslider_loop = true;
 	if (typeof(homeslider_width) == 'undefined')
-		homeslider_width = 779;
+		homeslider_width = 1024;
 
 
 	$('.homeslider-description').click(function () {
