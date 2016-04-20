@@ -129,6 +129,10 @@
 /********* MODIFS TIX ************/
 #homepage-slider{
 	overflow: visible;
+	padding-bottom: 3px;
+	-webkit-box-shadow: 0px 11px 9px -3px rgba(0,0,0,0.27);
+	-moz-box-shadow: 0px 11px 9px -3px rgba(0,0,0,0.27);
+	box-shadow: 0px 11px 9px -3px rgba(0,0,0,0.27);
 }
 #homepage-slider .bx-controls-direction a.bx-prev,
 #homepage-slider .bx-controls-direction a.bx-next{
@@ -145,7 +149,7 @@
 	background: none !important;
 }
 #homepage-slider .bx-pager{
-	bottom: -28px;
+	bottom: -40px;
 }
 #homepage-slider .bx-wrapper .bx-pager.bx-default-pager a{
 	display: block;
