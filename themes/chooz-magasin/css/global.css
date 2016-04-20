@@ -8611,41 +8611,7 @@ div.star.star_hover:after {
 	background: #fff !important;
 }
 
-.header-container,
-#header{
-	background: #fff !important;
-}
-#header.chooz_header{
-	border-bottom: 3px solid #22a7f0;
-	padding: 0px;
-}
-#header.chooz_header .sf-menu{
-	position: static;
-    top: 0;
-    right: 0;
-    margin: auto;
-    border: none;
-}
-#header.chooz_header .sf-menu>li{	
-	height: 75px;
-	border-bottom: none;
-	border-right: none;
-}
-#header.chooz_header .sf-menu>li:hover a{
-	border-bottom: 3px solid #22a7f0 !important;
-}
-#header.chooz_header .sf-menu>li>a{
-	padding: 0px 20px;	
-	height: 75px;
-	border-bottom: none;
-	font: 700 14px/75px 'Montserrat' , arial, sans-serif;
-}
-#header.chooz_header #header_logo a{
-	display: inline-block;
-    height: 75px;
-    width: 200px;
-	/*background: #d9d9d9;*/
-}
+
 .columns-container{
 	width: 1024px;
 }
