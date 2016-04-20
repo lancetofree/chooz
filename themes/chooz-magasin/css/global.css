@@ -7266,9 +7266,14 @@ div.star a:hover {
   .footer-container .container {
     padding-bottom: 100px; }
   .footer-container #footer {
-    color: #777777; }
+    color: #777777; 
+    background: #000;
+  }
     .footer-container #footer .row {
-      position: relative; }
+      position: relative; 
+      width: 85%;
+        margin: auto;
+    }
     .footer-container #footer ul.row {
       position: static; }
     .footer-container #footer .footer-block {
@@ -7335,7 +7340,6 @@ div.star a:hover {
       clear: left; }
     .footer-container #footer #social_block {
       float: left;
-      width: 50%;
       padding: 22px 15px 0 15px; }
       @media (max-width: 767px) {
         .footer-container #footer #social_block {
@@ -7389,7 +7393,6 @@ div.star a:hover {
           .footer-container #footer #social_block ul li.instagram a:before {
             content: "\f16d"; }
       .footer-container #footer #social_block h4 {
-        float: right;
         margin-bottom: 0;
         font-size: 21px;
         line-height: 25px;
@@ -8648,4 +8651,8 @@ div.star.star_hover:after {
 }
 .columns-container{
 	width: 1024px;
+}
+
+#footer section{
+    float: left !important;
 }
