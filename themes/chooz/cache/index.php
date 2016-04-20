@@ -1,3 +1,4 @@
+<?php
 /*
 * 2007-2015 PrestaShop
 *
@@ -19,44 +20,16 @@
 *
 *  @author PrestaShop SA <contact@prestashop.com>
 *  @copyright  2007-2015 PrestaShop SA
-*  @version  Release: $Revision$
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
-
-$(document).ready(function(){
-
-	if (typeof(homeslider_speed) == 'undefined')
-		homeslider_speed = 500;
-	if (typeof(homeslider_pause) == 'undefined')
-		homeslider_pause = 3000;
-	if (typeof(homeslider_loop) == 'undefined')
-		homeslider_loop = true;
-	if (typeof(homeslider_width) == 'undefined')
-		homeslider_width = 779;
-
-
-	$('.homeslider-description').click(function () {
-		window.location.href = $(this).prev('a').prop('href');
-	});
-
-	if ($('#htmlcontent_top').length > 0)
-		$('#homepage-slider').addClass('col-xs-8');
-	else
-		$('#homepage-slider').addClass('col-xs-12');
-
-	if (!!$.prototype.bxSlider)
-		$('#homeslider').bxSlider({
-			useCSS: false,
-			maxSlides: 1,
-			slideWidth: homeslider_width,
-			infiniteLoop: homeslider_loop,
-			hideControlOnEnd: true,
-			pager: true,
-			autoHover: true,
-			auto: homeslider_loop,
-			speed: parseInt(homeslider_speed),
-			pause: homeslider_pause,
-			controls: true
-		});
-});
+			    	
+header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");
+	
+header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+	
+header("Location: ../");
+exit;

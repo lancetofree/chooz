@@ -104,7 +104,7 @@
       color: #fff;
       text-indent: 0;
       text-align: center;
-      font-size: 21px;
+      font-size: 40px;
       font-family: "FontAwesome";
       position: absolute;
       top: 0;
@@ -118,11 +118,27 @@
     right: 60px;
     left: auto; }
     #homepage-slider .bx-wrapper .bx-prev:after {
-      content: "\f053"; }
+      content: "\f104"; }
   #homepage-slider .bx-wrapper .bx-next:after {
-    content: "\f054"; }
+    content: "\f105"; }
 
 .ie8 #homepage-slider .bx-wrapper .bx-controls-direction a:before {
   background: #333; }
 
 /*# sourceMappingURL=homeslider.css.map */
+
+/********* MODIFS TIX ************/
+#homepage-slider .bx-controls-direction a.bx-prev,
+#homepage-slider .bx-controls-direction a.bx-next{
+	top: 130px;
+	border: none;
+}
+#homepage-slider .bx-controls-direction a.bx-prev{ 
+	left: 0px;	
+}
+#homepage-slider .bx-controls-direction a.bx-next{ 
+	right: 0px;	
+}
+#homepage-slider .bx-controls-direction a:before{
+	background: none !important;
+}
