@@ -9,7 +9,30 @@
 
 (function ($) {
 	"use strict";
+	
+	$('document').ready(function(){
 
+		var previousScroll = 0,
+		headerOrgOffset = $('#header').height();
+
+		// $('#header-wrap').height($('#header').height());
+
+		$(window).scroll(function () {
+			var currentScroll = $(this).scrollTop();
+			if (currentScroll > headerOrgOffset) {
+				if (currentScroll > previousScroll) {
+					$('#header').addClass('header-up');
+				} else {
+					$('#header').removeClass('header-up');
+				}
+			} else {
+					$('#header').removeClass('header-up');
+			}
+			previousScroll = currentScroll;
+		});
+		
+	});
+	
 	var methods = (function () {
 		// private properties and methods go here
 		var c = {
