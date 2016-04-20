@@ -165,6 +165,21 @@ class BlockNewProducts extends Module
 
 		return $this->display(__FILE__, 'blocknewproducts_home.tpl', $this->getCacheId('blocknewproducts-home'));
 	}
+    
+    public function hookdisplayHome($params){
+        if (!$this->isCached('blocknewproducts_home.tpl', $this->getCacheId('blocknewproducts-home')))
+		{
+			$this->smarty->assign(array(
+				'new_products' => BlockNewProducts::$cache_new_products,
+				'mediumSize' => Image::getSize(ImageType::getFormatedName('medium')),
+				'homeSize' => Image::getSize(ImageType::getFormatedName('home'))
+			));
+		}
+        
+        $this->smarty->assign('show_title', true) ;
+		return $this->display(__FILE__, 'blocknewproducts_home.tpl', $this->getCacheId('blocknewproducts-home'));
+        
+    }
 
 	public function hookHeader($params)
 	{
