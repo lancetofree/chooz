@@ -127,6 +127,9 @@
 
 /*# sourceMappingURL=homeslider.css.map */
 /********* MODIFS TIX ************/
+#homepage-slider{
+	overflow: visible;
+}
 #homepage-slider .bx-controls-direction a.bx-prev,
 #homepage-slider .bx-controls-direction a.bx-next{
 	top: 130px;
@@ -140,4 +143,17 @@
 }
 #homepage-slider .bx-controls-direction a:before{
 	background: none !important;
+}
+#homepage-slider .bx-pager{
+	bottom: -28px;
+}
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a{
+	display: block;
+	width: 15px;
+	height: 15px;
+	background: #d9d9d9;
+	border-radius: 50%;
+}
+#homepage-slider .bx-wrapper .bx-pager.bx-default-pager a.active{
+	background: #22a7f0;
 }
