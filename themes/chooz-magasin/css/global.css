@@ -8647,3 +8647,6 @@ div.star.star_hover:after {
     width: 200px;
 	background: #d9d9d9;
 }
+.columns-container{
+	width: 1024px;
+}
