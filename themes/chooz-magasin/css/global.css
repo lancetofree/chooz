@@ -8619,19 +8619,3 @@ div.star.star_hover:after {
 #page_chooz_wrapper{
 	margin-top: 40px;
 }
-
-ul.product_list li.ajax_block_product{
-	width: 33.333%;
-}
-ul.product_list.grid > li.ajax_block_product .left-block .product-image-container{
-	margin: 0px;
-}
-ul.product_list.grid > li.ajax_block_product{
-	padding: 5px 5px 10px;
-}
-ul.product_list.grid > li.ajax_block_product .right-block{
-	background: #22a7f0;
-}
-ul.product_list.grid > li.ajax_block_product .right-block h5{
-	margin: 0px;
-}
