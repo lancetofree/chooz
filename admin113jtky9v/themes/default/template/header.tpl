@@ -289,13 +289,13 @@
 {/if}
 				<ul id="header_employee_box">
 					{if (!isset($logged_on_addons) || !$logged_on_addons) && (isset($display_addons_connection) && $display_addons_connection)}
-						<li class="hidden-sm hidden-xs">
+						{*<li class="hidden-sm hidden-xs">
 							<a href="#" class="addons_connect toolbar_btn" data-toggle="modal" data-target="#modal_addons_connect" title="{l s='Connect to PrestaShop Marketplace account'}">
 								<i class="icon-chain-broken"></i>
 								<span class="string-long">{l s='Connect to PrestaShop Marketplace account'}</span>
 								<span class="string-short">{l s='PrestaShop Marketplace'}</span>
 							</a>
-						</li>
+						</li>*}
 					{/if}
 {if {$base_url}}
 					<li>
