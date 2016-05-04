@@ -8619,3 +8619,105 @@ div.star.star_hover:after {
 #page_chooz_wrapper{
 	margin-top: 40px;
 }
+#page .footer-container {
+	background: #333333;
+	border-top: 3px solid #22A7F0;
+}
+.footer-container #footer{
+	width: 1024px;
+	margin: auto;
+}
+.footer-container #footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.footer-container #footer #social_block{
+	position: absolute;
+}
+.footer-container #footer section{
+	width: 25%;
+}
+.footer-container #footer h4,
+.footer-container #footer #social_block h4{
+	font: 18px 'Montserrat', arial;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.footer-container #footer ul li a{
+	font: 12px 'Muli', arial;
+	font-weight: 400;
+	color: #fff;
+	text-shadow: none;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+}
+.footer-container #footer #block_various_links_footer ul li a:before,
+.footer-container #footer .blockcategories_footer ul li a:before,
+.footer-container #footer section:last-child ul li a:before{
+	content: " ";
+	display: block;
+	height: 12px;
+	width: 7px;
+	background: url('../img/footer_arrow.png') no-repeat center;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.footer-container #footer .footer-block{
+	margin-top: 15px;
+}
+.footer-container #footer #block_contact_infos{
+	border: none;
+	margin-top: 100px;
+}
+.footer-container #footer #block_contact_infos h4{
+	display: none;
+}
+.footer-container #footer #social_block{
+	/* width: auto; */
+	width: 25%;
+    text-align: center;
+    padding: 15px;
+}
+.footer-container #footer #social_block ul{
+	float: none;
+	display: inline-block;
+	margin: 5px;
+}
+.footer-container #footer #social_block ul li a{
+	padding: 0px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #333333;
+}
+.footer-container #footer #social_block ul li{
+    width: 24px;
+	height: 24px;    
+    background: #000;
+    border-radius: 50%; 
+	margin: 0px 3px;
+}
+.footer-container #footer #social_block ul li:hover{
+	background: #22A7F0;
+}
+.footer-container #footer #social_block ul li:hover a{
+	color: #fff;
+}
+.footer-container #footer #social_block ul li a:before{
+	vertical-align: 0px;
+}
+.footer-container #footer #block_contact_infos > div ul li{
+	font: 12px 'Muli', arial;
+	line-height: 25px;
+	color: #fff;
+}
+.footer-container #footer #block_contact_infos > div ul li > span a{
+	padding: 0;
+    display: inline-block;
+}
+.footer-container #footer a:hover,
+.footer-container #footer #block_contact_infos > div ul li i{
+	color: #22a7f0;
+}
