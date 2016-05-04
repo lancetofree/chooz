@@ -438,6 +438,8 @@ ul.product_list.grid > li .product-container h5 a{
 ul.product_list.grid > li .product-container .content_price{
 	text-align: left;
     padding: 0px 10px;
+	position: absolute;
+    bottom: 65px;
 }
 ul.product_list.grid > li .product-container .content_price span{
 	font-family: 'Montserrat',  arial;
