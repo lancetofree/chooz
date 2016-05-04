@@ -399,6 +399,8 @@ Product list(Index page) Styles
 div.tab-content ul.product_list.active{
 	display: flex;
 	flex-wrap: wrap;
+	padding: 5px 5px 10px;
+	border: 1px solid #d9d9d9;
 }
 ul.product_list.grid > li.ajax_block_product .left-block .product-image-container{
 	margin: 0px;
@@ -479,4 +481,33 @@ ul.product_list.grid > li .product-container .price-percent-reduction b{
 	padding: 0px 5px;
 	background: #fff;
 	font-weight: 400;
+}
+ul.product_list.grid > li .product-container .product-image-container .product-transition{
+	opacity: 0;
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.35);
+	-webkit-transition: opacity .3s ease-in-out;
+	-moz-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+ul.product_list.grid > li .product-container .product-image-container .product-transition b{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	font: 50px 'Montserrat', arial;
+	color: #fff;
+	padding: 0px 15px;
+	border: 3px solid #fff;
+	cursor: pointer;
+}
+ul.product_list.grid > li:hover .product-container .product-image-container .product-transition{
+	opacity: 1;
+}
+ul.product_list.grid > li:hover{
+	box-shadow: none;
 }
