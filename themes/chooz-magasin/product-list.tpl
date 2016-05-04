@@ -65,7 +65,11 @@
 						{/if}
 						{if (!$PS_CATALOG_MODE && ((isset($product.show_price) && $product.show_price) || (isset($product.available_for_order) && $product.available_for_order)))}
 							<div class="content_price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									
 								{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
+									{if $product.specific_prices.reduction_type == 'percentage'}
+										<span class="price-percent-reduction"><b>-{$product.specific_prices.reduction * 100}%</b></span>
+									{/if}
 									<span itemprop="price" class="price product-price">
 										{hook h="displayProductPriceBlock" product=$product type="before_price"}
 										{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
@@ -76,9 +80,7 @@
 										<span class="old-price product-price">
 											{displayWtPrice p=$product.price_without_reduction}
 										</span>
-										{if $product.specific_prices.reduction_type == 'percentage'}
-											<span class="price-percent-reduction">-{$product.specific_prices.reduction * 100}%</span>
-										{/if}
+										
 									{/if}
 									{if $PS_STOCK_MANAGEMENT && isset($product.available_for_order) && $product.available_for_order && !isset($restricted_country_mode)}
 										<span class="unvisible">
@@ -131,6 +133,9 @@
 					<div class="content_price">
 						{if isset($product.show_price) && $product.show_price && !isset($restricted_country_mode)}
 							{hook h="displayProductPriceBlock" product=$product type='before_price'}
+							{if $product.specific_prices.reduction_type == 'percentage'}
+									<span class="price-percent-reduction"><b>-{$product.specific_prices.reduction * 100}%</b></span>
+							{/if}
 							<span class="price product-price">
 								{if !$priceDisplay}{convertPrice price=$product.price}{else}{convertPrice price=$product.price_tax_exc}{/if}
 							</span>
@@ -139,10 +144,7 @@
 								<span class="old-price product-price">
 									{displayWtPrice p=$product.price_without_reduction}
 								</span>
-								{hook h="displayProductPriceBlock" id_product=$product.id_product type="old_price"}
-								{if $product.specific_prices.reduction_type == 'percentage'}
-									<span class="price-percent-reduction">-{$product.specific_prices.reduction * 100}%</span>
-								{/if}
+								{hook h="displayProductPriceBlock" id_product=$product.id_product type="old_price"}								
 							{/if}
 							{hook h="displayProductPriceBlock" product=$product type="price"}
 							{hook h="displayProductPriceBlock" product=$product type="unit_price"}

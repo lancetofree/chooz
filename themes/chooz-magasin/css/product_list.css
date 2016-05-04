@@ -369,11 +369,11 @@ ul.product_list.list > li .right-block .right-block-content .functional-buttons 
 Product list(Index page) Styles
 ********************************************************/
 #index ul.product_list.tab-pane > li {
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
   margin-bottom: 10px; }
   @media (min-width: 1200px) {
     #index ul.product_list.tab-pane > li {
-      padding-bottom: 85px;
+      /* padding-bottom: 85px; */
       margin-bottom: 0; } }
   #index ul.product_list.tab-pane > li .availability {
     display: none; }
@@ -396,22 +396,85 @@ Product list(Index page) Styles
 /*# sourceMappingURL=product_list.css.map */
 
 
-
-ul.product_list li.ajax_block_product{
-	width: 33.333%;
+div.tab-content ul.product_list.active{
+	display: flex;
+	flex-wrap: wrap;
 }
 ul.product_list.grid > li.ajax_block_product .left-block .product-image-container{
 	margin: 0px;
 }
-ul.product_list.grid > li.ajax_block_product{
-	padding: 5px 5px 10px;
+ul.product_list.grid.tab-pane > li.ajax_block_product{
+	padding: 5px 5px 0px;
+	width: 33.333%;
+	padding-bottom: 5px;
 }
 ul.product_list.grid > li.ajax_block_product .right-block{
 	background: #22a7f0;
+	max-height: 240px;
+    height: 240px;
+	position: relative;
 }
 ul.product_list.grid > li.ajax_block_product .right-block h5{
 	margin: 0px;
 }
 ul.product_list.grid > li .product-container .product-desc{
 	display: block;
+	text-align: left;
+    padding: 0px 10px;
+	font: bold 14px 'Muli', arial;
+    color: #000;
+}
+ul.product_list.grid > li .product-container h5{
+	min-height: 0px;
+	font-family: 'Montserrat', arial;
+	text-align: left;
+	padding: 10px 10px 20px;
+}
+ul.product_list.grid > li .product-container h5 a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 15px;
+}
+ul.product_list.grid > li .product-container .content_price{
+	text-align: left;
+    padding: 0px 10px;
+}
+ul.product_list.grid > li .product-container .content_price span{
+	font-family: 'Montserrat',  arial;
+	color: #000;	
+	font-weight: 400;
+}
+ul.product_list.grid > li .product-container .button-container{
+	margin-bottom: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 2px;
+	padding: 0px 5px;
+}
+ul.product_list.grid > li .product-container .button-container a.button.lnk_view{
+	background: none;
+    text-shadow: none;
+    border: 2px solid #fff;
+	color: #fff;
+	text-transform: uppercase;
+	display: block;
+    text-align: center;
+}
+ul.product_list.grid > li .product-container .button-container a.button.lnk_view span{
+	background: none;
+    background-color: transparent;
+    border: none;
+	font: 18px 'Montserrat',  arial;
+}
+ul.product_list.grid > li .product-container .price-percent-reduction{
+	width: 100%;
+	border: none;
+	background: none;
+}
+ul.product_list.grid > li .product-container .price-percent-reduction b{
+	color: #000;
+	font-size: 20px;
+	padding: 0px 5px;
+	background: #fff;
+	font-weight: 400;
 }
