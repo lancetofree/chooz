@@ -8721,3 +8721,14 @@ div.star.star_hover:after {
 .footer-container #footer #block_contact_infos > div ul li i{
 	color: #22a7f0;
 }
+.footer-container #footer .bottom-footer{
+	width: 100%;
+	text-align: center;
+}
+.footer-container #footer .bottom-footer a{
+	font: 12px 'Muli', arial;
+	color: #fff;
+}
+.footer-container #footer .bottom-footer div{	
+	border: none;
+}
